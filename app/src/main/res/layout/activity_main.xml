@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basBouton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbarSize="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/monLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Maze Runner"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rejourBouton"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                app:srcCompat="@drawable/restart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zoneJeu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/zoneBoutons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:hapticFeedbackEnabled="false"
+            android:longClickable="false"
+            android:measureWithLargestChild="true"
+            android:paddingBottom="15dp"
+            android:shrinkColumns="3"
+            android:stretchColumns="3">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="gravity">
+
+                <ImageView
+                    android:id="@+id/hautBouton"
+                    android:layout_width="111dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_gravity="fill_vertical"
+                    app:srcCompat="@drawable/up" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="fill_vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/gaucheBouton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_gravity="fill_vertical"
+                    app:srcCompat="@drawable/left" />
+
+                <ImageView
+                    android:id="@+id/droiteBouton"
+                    android:layout_width="113dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_gravity="fill_vertical"
+                    app:srcCompat="@drawable/right" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/enbasBouton"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    app:srcCompat="@drawable/down" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="© Jeu de Labyrinth - 2023 | Nahean BADAR"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
